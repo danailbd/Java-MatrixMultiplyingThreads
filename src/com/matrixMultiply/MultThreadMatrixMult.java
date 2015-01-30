@@ -119,7 +119,7 @@ public class MultThreadMatrixMult {
 	}
 
 	public static void main(String[] args) {
-		final int timesToTest = 10;
+		final int timesToTest = 3;
 
 		int averageTime = 0;
 		int counter = 0;
@@ -157,10 +157,10 @@ public class MultThreadMatrixMult {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			computationTime /= timesToTest;
-			System.out.println("---------------------\n---------------------");
-			System.out.println("Average computatio time for " + timesToTest
-					+ "tests : " + computationTime);
 		}
+		averageTime /= timesToTest;
+		System.out.println("---------------------\n---------------------");
+		System.out.println("Average computatio time for " + timesToTest
+				+ "tests : " + averageTime);
 	}
 }
